@@ -1,0 +1,51 @@
+@import '../base';
+
+.product-list {
+    margin: 30px 50px;
+    width: 100%;
+}
+
+.product-list-box {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    font-family: Calibri-Regular;
+    margin-bottom: 20px;
+
+    .product-list-title {
+        font-family: Calibri-Bold;
+    }
+    .product-list-image {
+        text-align: center;
+
+        img{
+            width: 60px;
+        }
+    }
+}
+
+.product-list-stock > p > span {
+    margin-left: 5px;
+}
+.product-list-title {
+    text-decoration: underline;
+}
+
+.fa-exclamation-circle {
+    color: #FFA500;
+}
+
+.fa-times-circle, .warning {
+    color: #8E1216;
+}
+
+.product-list-stock {
+    .warning, .stock-alert {
+        font-family: Calibri-Bold;
+    }
+
+}

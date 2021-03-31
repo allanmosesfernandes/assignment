@@ -1,0 +1,101 @@
+@import '../base';
+
+.best-sellers {
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+.best-seller-box {
+    background: #fff;
+    display: grid;
+    grid-template-columns:max-content 1fr;
+    padding: 20px;
+    position: relative;
+
+
+    &::before {
+        content: attr(data-category);
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        top: -10px;
+        font-family: Calibri-Bold;
+        background-color: #FFA500;
+        padding: 10px 20px;
+    }
+.best-seller-img {
+    position: relative;
+    margin-right: 20px;
+    .img-award {
+        position: absolute;
+        right: -10px;
+    }
+}
+
+.best-seller-details {
+    padding: 10px;
+}
+}
+
+.product-title {
+    font-family: Calibri-Bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+.fa-check-circle {
+    color: green;
+}
+.product-specifications {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    margin: 10px 0;
+    font-family: Calibri-Regular;
+
+ > img {
+        // height: 70px;
+ }
+
+    .specification {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 80px;
+
+    >div {
+        min-width: 100px;
+    }
+    }
+}
+
+.total-bold {
+    font-family: Calibri-Bold;
+}
+
+//////----------Increment - Decrement Selectors-------/////////
+.cart-qty {
+display: flex;
+justify-content: space-between;
+grid-column-start: 2;
+padding: 10px;
+}
+.quantity {
+    display: flex;
+
+        input {
+            width: 50px;
+            text-align: center;
+            background-color: #e0e0e0;
+            font-family: Calibri-Bold;
+            border: none;
+        }
+    .btn {
+        border-radius: 0;
+        border: 1px solid #AEAEAE;
+    }
+}

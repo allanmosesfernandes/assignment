@@ -1,0 +1,58 @@
+@import './base';
+
+.filterBtn {
+    background: transparent;
+    border: 1px solid #AEAEAE;
+    display: flex;
+    align-items: center;
+    font-family: Calibri-Regular;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 19px;
+
+    img {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+    }
+
+    .fa-chevron-down {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+}
+
+
+
+.add-to-cartBtn {
+    font-family: Calibri-Bold;
+    background-color: #FFA500;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 150px;
+    img {
+        width: 30px;
+    }
+}
+
+.notification-btn {
+    @extend .add-to-cartBtn;
+    border: 1px solid #FFA500;
+    background-color: transparent;
+
+    img {
+        width: 20px;
+    }
+}
+
+.load-more {
+    font-family: Calibri-Bold;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 10px 30px;
+}

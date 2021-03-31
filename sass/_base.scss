@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Calibri-Bold;
+    src: url('../assets/fonts/Calibri\ Bold.TTF');
+}
+@font-face {
+    font-family: Calibri-Regular;
+    src: url('../assets/fonts/Calibri\ Regular.ttf');
+}
+@font-face {
+    font-family: Calibri-Italic;
+    src: url('../assets/fonts/Calibri\ Italic.ttf');
+}
+
+p {
+    margin-bottom: 0;
+}
+body {
+    font-family: Calibri-Bold;
+    background-color: #E2E2E2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
