@@ -19,18 +19,20 @@
     .product-list-title {
         font-family: Calibri-Bold;
     }
+
     .product-list-image {
         text-align: center;
 
-        img{
-            width: 60px;
+        img {
+            min-width: 60px;
         }
     }
 }
 
-.product-list-stock > p > span {
+.product-list-stock>p>span {
     margin-left: 5px;
 }
+
 .product-list-title {
     text-decoration: underline;
 }
@@ -39,13 +41,86 @@
     color: #FFA500;
 }
 
-.fa-times-circle, .warning {
+.fa-times-circle,
+.warning {
     color: #8E1216;
 }
 
 .product-list-stock {
-    .warning, .stock-alert {
+
+    .warning,
+    .stock-alert {
         font-family: Calibri-Bold;
     }
 
+}
+
+
+///------RESPONSIVE BEHAVIOR-------////
+
+
+/////--TABLET---///
+@media only screen and (max-width: 1200px) {
+
+    .product-list {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 20px;
+    }
+
+    .product-list-box {
+        margin-bottom: 0;
+        font-family: Calibri-Bold;
+        font-style: italic;
+        grid-template-columns: max-content max-content !important;
+        .product-list-image {
+            grid-row: 2;
+            width: max-content;
+            grid-column-start: 1;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        .product-list-title {
+            width: min-content;
+        }
+
+        .product-list-stock {
+            grid-column-start: 1;
+            grid-row: 2;
+            width: min-content;
+            margin-left: 70px;
+
+            .stock-alert {
+                width: max-content;
+            }
+
+            .warning {
+                width: max-content;
+            }
+        }
+
+        .product-list-qty {
+            grid-row: 3;
+        }
+
+        .product-list-cart {
+            grid-column-start: 2;
+            grid-row: 3;
+        }
+
+        .product-list-total {
+            grid-row: 2;
+            grid-column-start: 2;
+            margin-left: 70px;
+        }
+
+        .product-list-price {
+            grid-row: 2;
+            grid-column-start: 2;
+            width: min-content;
+        }
+    }
 }
