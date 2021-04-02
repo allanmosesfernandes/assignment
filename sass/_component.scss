@@ -1,5 +1,7 @@
 @import './base';
 
+
+///////------------filter-button first fold-------//////////
 .filterBtn {
     background: transparent;
     border: 1px solid #AEAEAE;
@@ -11,7 +13,7 @@
     padding: 0 10px;
     font-size: 16px;
     line-height: 19px;
-
+    transition: all 0.5s linear;
     img {
         width: 10px;
         height: 10px;
@@ -21,6 +23,14 @@
     .fa-chevron-down {
         font-size: 12px;
         margin-left: 5px;
+    }
+
+
+    &:hover {
+        border: none;
+        .fa-chevron-down {
+         transform: rotate(180deg);
+        }
     }
 }
 
@@ -55,4 +65,5 @@
     border: 1px solid #000;
     border-radius: 30px;
     padding: 10px 30px;
+    margin: 20px 0;
 }

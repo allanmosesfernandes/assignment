@@ -28,15 +28,19 @@
             <div class="account">
                 <div class="profile" data-text='account'>
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <span>Account</span>
+                    <span class="hide">Account</span>
                 </div>
 
                 <div class="orders">
-                    <i class="fa fa-file-text" aria-hidden="true"></i> <span>Orders</span>
+                    <i class="fa fa-file-text" aria-hidden="true"></i> <span class="hide">Orders</span>
                 </div>
                 <div class="cart">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <span>Cart</span>
+                    <div class="cart-container">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
+                    <span class="hide">Cart</span>
                 </div>
 
             </div>
@@ -68,8 +72,13 @@
                             <button class="filterBtn">
                                 Popularity
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
-
                             </button>
+                            <div class="dropdown-content">
+                                <a href="#">Lowest Price</a>
+                                <a href="#">Most Stock</a>
+                                <a href="#"> Model A - Z</a>
+                                <a href="#">Code No.</a>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -82,135 +91,6 @@
     <div class="container-fluid">
         <div class="row">
             <section class="best-sellers">
-                <!-- <div class="best-seller-box" data-category='Premium Bestseller'>
-                    <div class="best-seller-img">
-                        <img src="./assets/images/section-3/tyre.png" alt="product-img">
-                        <span class="img-award">
-                            <img src="./assets/images/section-3/auto-exp.png">
-                        </span>
-
-                    </div>
-                    <div class="best-seller-details">
-                        <div class="product-title">
-                            Continental - Contiecocontact 5
-                        </div>
-
-                        <div class="product-specifications">
-                            <div class="specification specification-img">
-                                <img src="./assets/images/section-3/approved.png" alt="">
-                            </div>
-                            <div class="specification tab-1">
-                                <div>
-                                    <p> 205/ 55 R16 H</p>
-                                    <p>SUV <span><img src="./assets/images/section-3/price.png"
-                                                style="opacity: 0;"></span></p>
-                                </div>
-
-                            </div>
-                            <div class="specification tab-2">
-                                <div>
-                                    <p> Stock <span class="instock-status"><i class="fa fa-check-circle"
-                                                aria-hidden="true"></i>
-                                        </span></p>
-                                    <p>Price <span> &#8362;
-                                        </span>340</p>
-                                </div>
-
-                            </div>
-                            <div class="specification tab-3">
-                                <div>
-                                    <p> Total</p>
-                                    <p class="total-bold">
-                                        <span>
-                                            &#8362;
-                                        </span>
-                                        1,360
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="cart-qty">
-                        <div class="quantity">
-                            <button class="btn minus-btn" type="button">-</button>
-                            <input type="text" value='4' id="quantity">
-                            <button class="btn plus-btn" type="button">+</button>
-
-                        </div>
-
-                        <button class="add-to-cartBtn">
-                            <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div> -->
-                <!-- <div class="best-seller-box" data-category='Premium Bestseller'>
-                    <div class="best-seller-img">
-                        <img src="./assets/images/section-3/tyre.png" alt="product-img">
-                        <span class="img-award">
-                            <img src="./assets/images/section-3/auto-exp.png">
-                        </span>
-
-                    </div>
-                    <div class="best-seller-details">
-                        <div class="product-title">
-                            Continental - Contiecocontact 5
-                        </div>
-
-                        <div class="product-specifications">
-                            <div class="specification specification-img">
-                                <img src="./assets/images/section-3/approved.png" alt="">
-                            </div>
-                            <div class="specification tab-1">
-                                <div>
-                                    <p> 205/ 55 R16 H</p>
-                                    <p>SUV <span>
-                                            &#8362;
-                                        </span></p>
-                                </div>
-
-                            </div>
-                            <div class="specification tab-2">
-                                <div>
-                                    <p> Stock <span class="instock-status"><i class="fa fa-check-circle"
-                                                aria-hidden="true"></i>
-                                        </span></p>
-                                    <p>Price <span>
-                                            &#8362;
-                                        </span>340</p>
-                                </div>
-
-                            </div>
-                            <div class="specification tab-3">
-                                <div>
-                                    <p> Total</p>
-                                    <p class="total-bold">
-                                        <span> &#8362;
-                                        </span>
-                                        1,360
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="cart-qty">
-                        <div class="quantity">
-                            <button class="btn minus-btn" type="button">-</button>
-                            <input type="text" value='4' id="quantity">
-                            <button class="btn plus-btn" type="button">+</button>
-
-                        </div>
-
-                        <button class="add-to-cartBtn">
-                            <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div> -->
                 <div class="best-seller-container" data-category="Premium Bestseller">
                     <div class="bs-image">
                         <img src="./assets/images/section-3/tyre.png" alt="Product Image">
@@ -267,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="best-seller-container" data-category="Premium Bestseller">
+                <div class="best-seller-container" data-category="Economy Bestseller">
                     <div class="bs-image">
                         <img src="./assets/images/section-3/tyre.png" alt="Product Image">
                         <span class="image-tag">
@@ -326,145 +206,273 @@
             </section>
         </div>
     </div>
-    <div class="container-fluid" style="display: none;">
+    <div class="container-fluid">
         <div class="row">
-            <div class="product-list">
-                <div class="product-list-box">
-                    <div class="product-list-title">
-                        Continental - PremiumContact 5&trade;
+            <section class="product-list-container">
+                <div class="product-list">
+                    <div class="product-list-box">
+                        <div class="product-list-title">
+                            Continental - PremiumContact 5&trade;
+    
+                        </div>
+                        <div class="product-list-image">
+                            <img src="./assets/images/section-3/approved.png" alt="">
+                        </div>
+                        <div class="product-list-name">
+                            <p> 205/ 55 R16 H</p>
+                            <p>SUV </p>
+                        </div>
+                        <div class="product-list-stock">
+                            <p> Stock <span class="instock-status"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    
+                        </div>
+                        <div class="product-list-price">
+                            <p>Price &#8362;340</p>
+                        </div>
+    
+                        <div class="product-list-qty quantity">
+                            <button class="btn minus-btn" type="button">-</button>
+                            <input type="text" value='4' id="prod-list-1">
+                            <button class="btn plus-btn" type="button">+</button>
+    
+                        </div>
+    
+                        <div class="product-list-total">
+                            <p class="total-bold">
+                                Total &#8362;<span class="mobile-bold">1,360</span>                            
+                            </p>
+                            <p class="save-mobile">
+                                Save &#8362;408!
+                            </p>
+                        </div>
+    
+                        <div class="product-list-cart">
+                            <button class="add-to-cartBtn">
+                                <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-list-box">
+                        <div class="product-list-title">
+                            Continental - PremiumContact 5&trade;
+    
+                        </div>
+                        <div class="product-list-image">
+                            <img src="./assets/images/section-3/approved.png" alt="">
+                        </div>
+                        <div class="product-list-name">
+                            <p> 205/ 55 R16 H</p>
+                            <p>SUV </p>
+                        </div>
+                        <div class="product-list-stock">
+                            <p> Stock <span class="instock-status"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <p class="stock-alert">8 Tires Left</p>
+                        </div>
+    
+                        <div class="product-list-price">
+                            <p>Price &#8362;340</p>
+                        </div>
+    
+                        <div class="product-list-qty quantity">
+                            <button class="btn minus-btn" type="button">-</button>
+                            <input type="text" value='4' id="prod-list-1">
+                            <button class="btn plus-btn" type="button">+</button>
+    
+                        </div>
+    
+                        <div class="product-list-total">
+                            <p class="total-bold">Total &#8362; <span class="mobile-bold">1,360</span>
+                            </p>
+                            <p class="save-mobile">
+                                Save &#8362;408!
+                            </p>
+                        </div>
+                        <div class="product-list-cart">
+                            <button class="add-to-cartBtn">
+                                <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-list-box">
+                        <div class="product-list-title">
+                            Continental - PremiumContact 5&trade;
+    
+                        </div>
+                        <div class="product-list-image">
+                            <img src="./assets/images/section-3/approved.png" alt="">
+                        </div>
+                        <div class="product-list-name">
+                            <p> 205/ 55 R16 H</p>
+                            <p>SUV </p>
+                        </div>
+                        <div class="product-list-stock">
+                            <p> Stock <span class="instock-status">
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                            <p class="warning">Back in 1 week!</p>
+                        </div>
+    
+                        <div class="product-list-price">
+                            <p>Price &#8362;340</p>
+                        </div>
+    
+                        <div class="product-list-qty quantity">
+                            <button class="btn minus-btn" type="button">-</button>
+                            <input type="text" value='4' id="prod-list-1">
+                            <button class="btn plus-btn" type="button">+</button>
+    
+                        </div>
+    
+                        <div class="product-list-total">
+                            <p class="total-bold">
+                                    Total &#8362; <span class="mobile-bold">1,360</span>
+                            </p>
+                            <p class="save-mobile">
+                                Save &#8362;408!
+                            </p>
+                        </div>
+                        <div class="product-list-cart">
+                            <button class="notification-btn ">
+                                <img src="./assets/images/section-3/notifications-sharp@2x.png" alt="cart">
+                               Notify me!
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="product-list-box tablet-only">
+                        <div class="product-list-title">
+                            Continental - PremiumContact 5&trade;
+    
+                        </div>
+                        <div class="product-list-image">
+                            <img src="./assets/images/section-3/approved.png" alt="">
+                        </div>
+                        <div class="product-list-name">
+                            <p> 205/ 55 R16 H</p>
+                            <p>SUV </p>
+                        </div>
+                        <div class="product-list-stock">
+                            <p> Stock <span class="instock-status"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    
+                        </div>
+                        <div class="product-list-price">
+                            <p>Price &#8362;340</p>
+                        </div>
+    
+                        <div class="product-list-qty quantity">
+                            <button class="btn minus-btn" type="button">-</button>
+                            <input type="text" value='4' id="prod-list-1">
+                            <button class="btn plus-btn" type="button">+</button>
+    
+                        </div>
+    
+                        <div class="product-list-total">
+                            <p class="total-bold">
+                                Total &#8362; 1,360
+                            </p>
+                        </div>
+    
+                        <div class="product-list-cart">
+                            <button class="add-to-cartBtn">
+                                <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
 
+                    <div class="product-list-box tablet-only">
+                        <div class="product-list-title">
+                            Continental - PremiumContact 5&trade;
+    
+                        </div>
+                        <div class="product-list-image">
+                            <img src="./assets/images/section-3/approved.png" alt="">
+                        </div>
+                        <div class="product-list-name">
+                            <p> 205/ 55 R16 H</p>
+                            <p>SUV </p>
+                        </div>
+                        <div class="product-list-stock">
+                            <p> Stock <span class="instock-status"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    
+                        </div>
+                        <div class="product-list-price">
+                            <p>Price &#8362;340</p>
+                        </div>
+    
+                        <div class="product-list-qty quantity">
+                            <button class="btn minus-btn" type="button">-</button>
+                            <input type="text" value='4' id="prod-list-1">
+                            <button class="btn plus-btn" type="button">+</button>
+    
+                        </div>
+    
+                        <div class="product-list-total">
+                            <p class="total-bold">
+                                Total
+                                <span>
+                                    &#8362;
+                                </span>
+                                1,360
+                            </p>
+                        </div>
+    
+                        <div class="product-list-cart">
+                            <button class="add-to-cartBtn">
+                                <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
-                    <div class="product-list-image">
-                        <img src="./assets/images/section-3/approved.png" alt="">
-                    </div>
-                    <div class="product-list-name">
-                        <p> 205/ 55 R16 H</p>
-                        <p>SUV </p>
-                    </div>
-                    <div class="product-list-stock">
-                        <p> Stock <span class="instock-status"><i class="fa fa-check-circle" aria-hidden="true"></i>
 
-                    </div>
-                    <div class="product-list-price">
-                        <p>Price &#8362;340</p>
-                    </div>
-
-                    <div class="product-list-qty quantity">
-                        <button class="btn minus-btn" type="button">-</button>
-                        <input type="text" value='4' id="prod-list-1">
-                        <button class="btn plus-btn" type="button">+</button>
-
-                    </div>
-
-                    <div class="product-list-total">
-                        <p class="total-bold">
-                            Total
-                            <span>
-                                &#8362;
-                            </span>
-                            1,360
-                        </p>
-                    </div>
-
-                    <div class="product-list-cart">
-                        <button class="add-to-cartBtn">
-                            <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
-                            Add to Cart
-                        </button>
+                    <div class="product-list-box tablet-only">
+                        <div class="product-list-title">
+                            Continental - PremiumContact 5&trade;
+    
+                        </div>
+                        <div class="product-list-image">
+                            <img src="./assets/images/section-3/approved.png" alt="">
+                        </div>
+                        <div class="product-list-name">
+                            <p> 205/ 55 R16 H</p>
+                            <p>SUV </p>
+                        </div>
+                        <div class="product-list-stock">
+                            <p> Stock <span class="instock-status"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    
+                        </div>
+                        <div class="product-list-price">
+                            <p>Price &#8362;340</p>
+                        </div>
+    
+                        <div class="product-list-qty quantity">
+                            <button class="btn minus-btn" type="button">-</button>
+                            <input type="text" value='4' id="prod-list-1">
+                            <button class="btn plus-btn" type="button">+</button>
+    
+                        </div>
+    
+                        <div class="product-list-total">
+                            <p class="total-bold">
+                                Total &#8362;1,360
+                            </p>
+                         
+                        </div>
+    
+                        <div class="product-list-cart">
+                            <button class="add-to-cartBtn">
+                                <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="product-list-box">
-                    <div class="product-list-title">
-                        Continental - PremiumContact 5&trade;
-
-                    </div>
-                    <div class="product-list-image">
-                        <img src="./assets/images/section-3/approved.png" alt="">
-                    </div>
-                    <div class="product-list-name">
-                        <p> 205/ 55 R16 H</p>
-                        <p>SUV </p>
-                    </div>
-                    <div class="product-list-stock">
-                        <p> Stock <span class="instock-status"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                        <p class="stock-alert">8 Tires Left</p>
-                    </div>
-
-                    <div class="product-list-price">
-                        <p>Price &#8362;340</p>
-                    </div>
-
-                    <div class="product-list-qty quantity">
-                        <button class="btn minus-btn" type="button">-</button>
-                        <input type="text" value='4' id="prod-list-1">
-                        <button class="btn plus-btn" type="button">+</button>
-
-                    </div>
-
-                    <div class="product-list-total">
-                        <p class="total-bold">Total
-                            <span>
-                                &#8362;
-                            </span>
-                            1,360
-                        </p>
-                    </div>
-                    <div class="product-list-cart">
-                        <button class="add-to-cartBtn">
-                            <img src="./assets/images/section-3/Screenshot 2021-03-29 165245.png" alt="cart">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-                <div class="product-list-box">
-                    <div class="product-list-title">
-                        Continental - PremiumContact 5&trade;
-
-                    </div>
-                    <div class="product-list-image">
-                        <img src="./assets/images/section-3/approved.png" alt="">
-                    </div>
-                    <div class="product-list-name">
-                        <p> 205/ 55 R16 H</p>
-                        <p>SUV </p>
-                    </div>
-                    <div class="product-list-stock">
-                        <p> Stock <span class="instock-status">
-                            <i class="fa fa-times-circle" aria-hidden="true"></i>
-                        <p class="warning">Back in 1 week!</p>
-                    </div>
-
-                    <div class="product-list-price">
-                        <p>Price &#8362;340</p>
-                    </div>
-
-                    <div class="product-list-qty quantity">
-                        <button class="btn minus-btn" type="button">-</button>
-                        <input type="text" value='4' id="prod-list-1">
-                        <button class="btn plus-btn" type="button">+</button>
-
-                    </div>
-
-                    <div class="product-list-total">
-                        <p class="total-bold">
-                            <span>Total
-                                &#8362;
-                            </span>
-                            1,360
-                        </p>
-                    </div>
-                    <div class="product-list-cart">
-                        <button class="notification-btn ">
-                            <img src="./assets/images/section-3/notifications-sharp@2x.png" alt="cart">
-                           Notify me!
-                        </button>
-                    </div>
-                </div>
-
                 <button class="load-more">
                     Load More Results
                 </button>
-            </div>
+            </section>
+
             
         </div>
 

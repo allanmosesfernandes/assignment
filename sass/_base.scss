@@ -17,9 +17,13 @@ p {
 body {
     font-family: Calibri-Bold;
     background-color: #E2E2E2;
+    overflow-x: hidden;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+///--hide scrollbars--//
+/* Hide scrollbar for Chrome, Safari and Opera */
